@@ -352,16 +352,16 @@ Each course is crafted to give you practical skills, not just theory: so you're 
 </div>
 
 
-<div className="flex flex-col gap-30 z-10 -mt-40 w-full bg-[#171717] py-16">
+<div className="flex flex-col gap-5 z-10 -mt-40 w-full bg-[#171717] py-16">
   {/* testimonies row 1 */}
   <div className="text-white flex px-40 flex-row gap-5">
     {/* Card 1 */}
-    <div className="border border-gray-500 px-6 py-8 rounded-lg">
-      <h3>
+    <div className="border border-gray-500 px-6 py-8 bg-gradient-to-r from-[#0D1452] to-[#004E92] rounded-lg w-[360px] h-[320px] flex flex-col justify-between overflow-hidden">
+      <h3 className="text-sm leading-relaxed">
         I came in knowing nothing about Web3. Six weeks later, I deployed my first smart contract
         and joined a hackathon team. The hands-on quests made it all click for me
       </h3>
-      <div className="flex flex-row pt-20 items-center gap-6">
+      <div className="flex flex-row pt-6 items-center gap-6">
         <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-700 text-sm font-bold">
           I
         </div>
@@ -373,48 +373,51 @@ Each course is crafted to give you practical skills, not just theory: so you're 
     </div>
 
     {/* Card 2 */}
-    <div className="border border-gray-500 px-6 py-8 rounded-lg">
-      <h3>
-      This platform helped me mint my first NFT and actually understand the tech behind it. It’s more than just hype — I finally feel like I belong in Web3.
+    <div className="border border-gray-500 px-6 bg-gradient-to-r from-[#0D1452] to-[#004E92] py-8 rounded-lg w-[360px] h-[320px] flex flex-col justify-between overflow-hidden">
+      <h3 className="text-sm leading-relaxed">
+        This platform helped me mint my first NFT and actually understand the tech behind it. It’s
+        more than just hype — I finally feel like I belong in Web3.
       </h3>
-      <div className="flex flex-row pt-20 items-center gap-6">
+      <div className="flex flex-row pt-6 items-center gap-6">
         <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-700 text-sm font-bold">
           A
         </div>
         <div className="text-sm">
           <span className="font-bold">Aisha K.,</span><br />
-Digital Artist & Illustrator
- <br />Nigeria
+          Digital Artist & Illustrator, <br />Nigeria
         </div>
       </div>
     </div>
 
     {/* Card 3 */}
-    <div className="border border-gray-500 px-6 py-8 rounded-lg">
-      <h3>
-      After working in finance for 10 years, I was looking to pivot. The DeFi module was a game changer — clear, practical, and actually fun to learn. Now I’m contributing to a DAO treasury team.
+    <div className="border border-gray-500 px-6 py-8 bg-gradient-to-r from-[#0D1452] to-[#004E92] rounded-lg w-[360px] h-[320px] flex flex-col justify-between overflow-hidden">
+      <h3 className="text-sm leading-relaxed">
+        After working in finance for 10 years, I was looking to pivot. The DeFi module was a game
+        changer — clear, practical, and actually fun to learn. Now I’m contributing to a DAO
+        treasury team.
       </h3>
-      <div className="flex flex-row pt-20 items-center gap-6">
+      <div className="flex flex-row pt-6 items-center gap-6">
         <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-700 text-sm font-bold">
           D
         </div>
         <div className="text-sm">
-          <span className="font-bold">Daniel O.</span><br />
-          
-Ex-Traditional Finance, <br/> Now Web3 Contributor <br />Nigeria
+          <span className="font-bold">Daniel O.,</span><br />
+          Ex-Traditional Finance, <br />Now Web3 Contributor, <br />Nigeria
         </div>
       </div>
     </div>
   </div>
 
   {/* testimonies row 2 */}
-  <div className="text-white flex -mt-25 px-40 flex-row gap-5">
+  <div className="text-white flex px-40 flex-row gap-5">
     {/* Card 4 */}
-    <div className="border border-gray-500 px-6 py-8 rounded-lg">
-      <h3>
-      As a passionate developer, I started exploring the potential of blockchain technology in Africa. I collaborate with local startups to create impactful decentralized solutions that address real-world challenges.
+    <div className="border border-gray-500 px-6 py-8 bg-gradient-to-r from-[#0D1452] to-[#004E92] rounded-lg w-[360px] h-[320px] flex flex-col justify-between overflow-hidden">
+      <h3 className="text-sm leading-relaxed">
+        As a passionate developer, I started exploring the potential of blockchain technology in
+        Africa. I collaborate with local startups to create impactful decentralized solutions that
+        address real-world challenges.
       </h3>
-      <div className="flex flex-row pt-20 items-center gap-6">
+      <div className="flex flex-row pt-6 items-center gap-6">
         <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-700 text-sm font-bold">
           K
         </div>
@@ -426,91 +429,161 @@ Ex-Traditional Finance, <br/> Now Web3 Contributor <br />Nigeria
     </div>
 
     {/* Card 5 */}
-    <div className="border border-gray-500 px-6 py-8 rounded-lg">
-      <h3>
-      With a background in finance, I recognized the disruptive power of blockchain in enhancing transparency and security. Now, I help organizations in Kenya transition to blockchain-based financial systems.
+    <div className="border border-gray-500 px-6 py-8 bg-gradient-to-r from-[#0D1452] to-[#004E92] rounded-lg w-[360px] h-[320px] flex flex-col justify-between overflow-hidden">
+      <h3 className="text-sm leading-relaxed">
+        With a background in finance, I recognized the disruptive power of blockchain in enhancing
+        transparency and security. Now, I help organizations in Kenya transition to blockchain-based
+        financial systems.
       </h3>
-      <div className="flex flex-row pt-20 items-center gap-6">
+      <div className="flex flex-row pt-6 items-center gap-6">
         <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-700 text-sm font-bold">
-          I
+          A
         </div>
         <div className="text-sm">
-          <span className="font-bold">Ifeanyi M.,</span><br />
-          Software Engineering Student, <br />Nigeria
+          <span className="font-bold">Amina J.,</span><br />
+          Financial Consultant, <br />Kenya
         </div>
       </div>
     </div>
 
     {/* Card 6 */}
-    <div className="border border-gray-500 px-6 py-8 rounded-lg">
-      <h3>
-      After attending a blockchain conference in South Africa, I became inspired to leverage technology for social change. I actively engage in projects that promote digital literacy and financial inclusion among marginalized communities.
+    <div className="border border-gray-500 px-6 py-8 bg-gradient-to-r from-[#0D1452] to-[#004E92] rounded-lg w-[360px] h-[320px] flex flex-col justify-between overflow-hidden">
+      <h3 className="text-sm leading-relaxed">
+        After attending a blockchain conference in South Africa, I became inspired to leverage
+        technology for social change. I actively engage in projects that promote digital literacy and
+        financial inclusion among marginalized communities.
       </h3>
-      <div className="flex flex-row pt-20 items-center gap-6">
+      <div className="flex flex-row pt-6 items-center gap-6">
         <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-700 text-sm font-bold">
-          I
+          S
         </div>
         <div className="text-sm">
-          <span className="font-bold">Ifeanyi M.,</span><br />
-          Software Engineering Student, <br />Nigeria
+          <span className="font-bold">Sipho M.,</span><br />
+          Community Organizer, <br />South Africa
         </div>
       </div>
     </div>
   </div>
 
   {/* testimonies row 3 */}
-  <div className="text-white flex -mt-25 px-40 flex-row gap-5">
+  <div className="text-white flex px-40 flex-row gap-5">
     {/* Card 7 */}
-    <div className="border border-gray-500 px-6 py-8 rounded-lg">
-      <h3>
-      Having always been intrigued by the possibilities of cryptocurrency, I dove deep into the world of smart contracts. The mentorship I received was invaluable, and now I’m developing tools that empower others to navigate this landscape safely and effectively.
+    <div className="border border-gray-500 px-6 py-8 bg-gradient-to-r from-[#0D1452] to-[#004E92] rounded-lg w-[360px] h-[320px] flex flex-col justify-between overflow-hidden">
+      <h3 className="text-sm leading-relaxed">
+        Having always been intrigued by the possibilities of cryptocurrency, I dove deep into the
+        world of smart contracts. The mentorship I received was invaluable, and now I’m developing
+        tools that empower others to navigate this landscape safely and effectively.
       </h3>
-      <div className="flex flex-row pt-20 items-center gap-6">
+      <div className="flex flex-row pt-6 items-center gap-6">
         <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-700 text-sm font-bold">
-          I
+          L
         </div>
         <div className="text-sm">
-          <span className="font-bold">Ifeanyi M.,</span><br />
-          Software Engineering Student, <br />Nigeria
+          <span className="font-bold">Lola T.,</span><br />
+          Blockchain Developer, <br />Nigeria
         </div>
       </div>
     </div>
 
     {/* Card 8 */}
-    <div className="border border-gray-500 px-6 py-8 rounded-lg">
-      <h3>
-        I came in knowing nothing about Web3. Six weeks later, I deployed my first smart contract
-        and joined a hackathon team. The hands-on quests made it all click for me
+    <div className="border border-gray-500 px-6 py-8 bg-gradient-to-r from-[#0D1452] to-[#004E92] rounded-lg w-[360px] h-[320px] flex flex-col justify-between overflow-hidden">
+      <h3 className="text-sm leading-relaxed">
+      The immersive workshops taught me how to harness blockchain for real-world applications. I’m now building a platform focused on sustainable agricultural practices using decentralized tech.
       </h3>
-      <div className="flex flex-row pt-20 items-center gap-6">
+      <div className="flex flex-row pt-6 items-center gap-6">
         <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-700 text-sm font-bold">
-          I
+          E
         </div>
         <div className="text-sm">
-          <span className="font-bold">Ifeanyi M.,</span><br />
-          Software Engineering Student, <br />Nigeria
+          <span className="font-bold">Ewan S.,</span><br />
+          Agri-Tech Innovator, <br />Kenya
         </div>
       </div>
     </div>
 
     {/* Card 9 */}
-    <div className="border border-gray-500  bg-gradient-to-br from-[#2C2A7B80] to-[#FFFFFF]  px-6 py-8 rounded-lg">
-      <h3>
-        I came in knowing nothing about Web3. Six weeks later, I deployed my first smart contract
-        and joined a hackathon team. The hands-on quests made it all click for me
+    <div className="border border-gray-500 bg-gradient-to-r from-[#0D1452] to-[#004E92] px-6 py-8 rounded-lg w-[360px] h-[320px] flex flex-col justify-between overflow-hidden">
+      <h3 className="text-sm leading-relaxed">
+      Inspired by the potential of NFTs, I’ve launched a project that connects artists with collectors, promoting indigenous art from across the continent. It’s fulfilling to see culture and technology intertwine.
       </h3>
-      <div className="flex flex-row pt-20 items-center gap-6">
+      <div className="flex flex-row pt-6 items-center gap-6">
         <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-700 text-sm font-bold">
-          I
+          C
         </div>
         <div className="text-sm">
-          <span className="font-bold">Ifeanyi M.,</span><br />
-          Software Engineering Student, <br />Nigeria
+          <span className="font-bold">Chidi N.,</span><br />
+          Cultural Entrepreneur, <br />Nigeria
         </div>
       </div>
     </div>
   </div>
 </div>
+
+{/* Hero Section with Mechanics Background */}
+<div className="relative z-10 -mt-15 pt-40 bg-[#171717]">
+  <div className="text-white">
+    <div className="relative w-screen min-h-[33vh] flex flex-col items-center justify-center py-30 mx-auto max-w-full">
+      
+      {/* Background image with brightness */}
+      <div className="absolute inset-0 bg-[url('/images/mechanics.png')] bg-cover bg-center brightness-30"></div>
+      
+      {/* Content stays normal */}
+      <h1 className="relative z-10 text-white text-6xl font-medium">
+        Web3 Isn't the Future. It's Now.
+      </h1>
+      <p className="relative z-10 text-white font-extralight pt-2 text-3xl mt-4">
+        Start learning today and build what's next
+      </p>
+      <div className="pt-5">
+        <button className="relative z-10 mt-6 bg-blue-900 border-white border-1 text-white px-10 py-4 rounded-xl font-normal">
+          Start Learning
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{/* Footer Section */}
+<div className="bg-[#171717] z-10 text-white pt-50 pb-20 -mt-5 px-4 sm:px-6 lg:px-8">
+  <div className="max-w-7xl mx-auto w-full">
+
+    {/* Top Row */}
+    <div className="flex justify-between items-start px-10 w-full">
+      
+      {/* Left Column - LearnFi Logo */}
+      <div className="flex items-center gap-2">
+        <Image
+          src="/images/Lofi.png"
+          alt="LearnFi Logo"
+          width={30}
+          height={30}
+          className="w-6 h-6 md:w-8 md:h-8"
+        />
+        <span className="text-base md:text-lg font-light">LearnFi</span>
+      </div>
+      
+      {/* Right Column - Explore Submenu */}
+      <div>
+        <h3 className="text-lg font-medium mb-4">Explore</h3>
+        <ul className="space-y-3">
+          <li className="text-gray-300 hover:text-white cursor-pointer">Blockchain Basics</li>
+          <li className="text-gray-300 hover:text-white cursor-pointer">Decentralized Applications (dApps)</li>
+          <li className="text-gray-300 hover:text-white cursor-pointer">Smart Contracts Explained</li>
+          <li className="text-gray-300 hover:text-white cursor-pointer">Cryptocurrency Fundamentals</li>
+          <li className="text-gray-300 hover:text-white cursor-pointer">Web3 and the Future of the Internet</li>
+        </ul>
+      </div>
+
+    </div>
+
+    {/* Bottom Border */}
+    <div className="pt-8 text-gray-400 pl-10 text-sm">
+      <p>{new Date().getFullYear()} @ All rights reserved LearnFi</p>
+    </div>
+
+  </div>
+</div>
+
 
 
 

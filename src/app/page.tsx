@@ -3,6 +3,7 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import RootLayout from "@/app/layout";
 
 const Atropos = dynamic(() => import("atropos/react"), { ssr: false });
 
@@ -61,58 +62,10 @@ export default function Home() {
   const ctaInView = useInView(ctaRef, { once: true, amount: 0.5 });
 
   return (
+    
     <div className="relative min-h-screen overflow-hidden flex flex-col">
       <div className="relative w-screen min-h-screen bg-[url('/images/gradient.png')] bg-cover bg-center">
-        {/* Navigation Bar */}
-        <motion.nav 
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          className="relative z-10 border border-white/20 backdrop-blur-lg bg-[#313131] mt-4 md:mt-12 mx-4 md:mx-20 rounded-xl p-3 md:p-5 shadow-2xl"
-        >
-          <div className="text-white text-sm font-extralight flex flex-col md:flex-row items-center justify-between gap-4">
-            {/* Logo */}
-            <motion.div 
-              whileHover={{ scale: 1.05 }}
-              className="flex items-center gap-2"
-            >
-              <Image
-                src="/images/Lofi.png"
-                alt="LearnFi Logo"
-                width={30}
-                height={30}
-                className="w-6 h-6 md:w-8 md:h-8"
-              />
-              <span className="text-base md:text-lg font-light">LearnFi</span>
-            </motion.div>
-
-            {/* Navigation Links */}
-            <div className="flex flex-wrap justify-center gap-4 md:gap-8 lg:gap-20">
-              {['Home', 'Program', 'Pricing', 'About'].map((item, index) => (
-                <motion.a
-                  key={item}
-                  href="#"
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                  whileHover={{ scale: 1.1, color: "#d8b4fe" }}
-                  className="hover:text-purple-300 transition-colors"
-                >
-                  {item}
-                </motion.a>
-              ))}
-            </div>
-
-            {/* Register Button */}
-            <motion.button 
-              whileHover={{ scale: 1.05, backgroundColor: "rgba(74, 42, 122, 0.8)" }}
-              whileTap={{ scale: 0.95 }}
-              className="border-1 border-white rounded-lg px-4 py-2 md:px-5 md:py-2 text-xs md:text-sm bg-[#2A0134]/30 hover:bg-[#4a2a7a] transition-colors duration-200 whitespace-nowrap"
-            >
-              Register now
-            </motion.button>
-          </div>
-        </motion.nav>
+       
 
         {/* Hero Section */}
         <main ref={heroRef} className="text-white z-10 my-8 md:my-20 mx-4 md:mx-10 lg:mx-20 xl:mx-40 flex flex-col items-center">
@@ -919,5 +872,6 @@ export default function Home() {
         </div>
       </motion.div>
     </div>
+    
   );
 }

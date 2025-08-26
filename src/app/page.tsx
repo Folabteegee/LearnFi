@@ -5,7 +5,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import RootLayout from "@/app/layout";
 
-const Atropos = dynamic(() => import("atropos/react"), { ssr: false });
+  const Atropos = dynamic(() => import("atropos/react"), { ssr: false });
 
 // Animation variants
 const fadeIn = {
@@ -235,7 +235,7 @@ export default function Home() {
               <Atropos>
                 <motion.div 
                   whileHover={{ y: -10, transition: { duration: 0.3 } }}
-                  className="border-2 rounded-lg border-purple-500 p-4 h-full flex flex-col"
+                  className="border-3 rounded-lg border-purple-500/30 p-4 h-full flex flex-col"
                 >
                   <Image
                     src="/images/blockchain.png"
@@ -263,7 +263,7 @@ export default function Home() {
               <Atropos>
                 <motion.div 
                   whileHover={{ y: -10, transition: { duration: 0.3 } }}
-                  className="border-2 rounded-lg border-purple-500 p-4 h-full flex flex-col"
+                  className="border-3 rounded-lg border-purple-500/30 p-4 h-full flex flex-col"
                 >
                   <Image
                     src="/images/wallet.png"
@@ -291,7 +291,7 @@ export default function Home() {
               <Atropos>
                 <motion.div 
                   whileHover={{ y: -10, transition: { duration: 0.3 } }}
-                  className="border-2 rounded-lg border-purple-500 p-4 h-full flex flex-col"
+                  className="border-3 rounded-lg border-purple-500/30 p-4 h-full flex flex-col"
                 >
                   <Image
                     src="/images/shakes.png"
@@ -321,7 +321,7 @@ export default function Home() {
               <Atropos>
                 <motion.div 
                   whileHover={{ y: -10, transition: { duration: 0.3 } }}
-                  className="border-2 rounded-lg border-purple-500 p-4 h-full flex flex-col"
+                  className="border-3 rounded-lg border-purple-500/30 p-4 h-full flex flex-col"
                 >
                   <Image
                     src="/images/nft.png"
@@ -349,7 +349,7 @@ export default function Home() {
               <Atropos>
                 <motion.div 
                   whileHover={{ y: -10, transition: { duration: 0.3 } }}
-                  className="border-2 rounded-lg border-purple-500 p-4 h-full flex flex-col"
+                  className="border-3 rounded-lg border-purple-500/30 p-4 h-full flex flex-col"
                 >
                   <Image
                     src="/images/DAOs.png"
@@ -377,7 +377,7 @@ export default function Home() {
               <Atropos>
                 <motion.div 
                   whileHover={{ y: -10, transition: { duration: 0.3 } }}
-                  className="border-2 rounded-lg border-purple-500 p-4 h-full flex flex-col"
+                  className="border-3 rounded-lg border-purple-500/30 p-4 h-full flex flex-col"
                 >
                   <Image
                     src="/images/DApp.png"

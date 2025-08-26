@@ -41,7 +41,7 @@ export default function Navbar() {
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
-      className="relative z-10 border border-white/20 backdrop-blur-lg bg-[#313131] mt-4 md:mt-12 mx-4 md:mx-20 rounded-xl p-3 md:p-5 shadow-2xl"
+      className="relative z-10 border border-white/20 backdrop-blur-lg bg-[#313131]/50 mt-4 md:mt-12 mx-4 md:mx-20 rounded-xl p-3 md:p-5 shadow-2xl"
     >
       <div className="text-white text-sm font-extralight flex flex-col md:flex-row items-center justify-between gap-4">
         {/* Logo */}

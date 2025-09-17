@@ -111,9 +111,16 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              <a href="#about" className="hover:text-purple-300 transition-colors">
+              <Link
+                href="/aboutus"
+                className={`hover:text-purple-300 transition-colors ${
+                  pathname === "/aboutus"
+                    ? "text-purple-400 font-medium"
+                    : ""
+                }`}
+              >
                 About Us
-              </a>
+              </Link>
             </motion.div>
           </div>
 
@@ -198,13 +205,17 @@ export default function Navbar() {
                 Pricing
               </Link>
 
-              <a
-                href="#about"
-                className="py-2 px-4 rounded-lg hover:bg-white/10 transition-colors"
+              <Link
+                href="/aboutus"
+                className={`py-2 px-4 rounded-lg hover:bg-white/10 transition-colors ${
+                  pathname === "/aboutus"
+                    ? "bg-white/10 text-purple-400"
+                    : ""
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 About Us
-              </a>
+              </Link>
 
               <motion.button
                 whileHover={{

@@ -212,7 +212,7 @@ export default function Navbar() {
                   backgroundColor: "rgba(74, 42, 122, 0.8)",
                 }}
                 whileTap={{ scale: 0.98 }}
-                className="border border-white rounded-lg py-3 px-4 text-sm bg-[#2A0134]/30 hover:bg-[#4a2a7a] transition-colors duration-200 mt-4"
+                className="border border-white rounded-lg cursor-not-allowed py-3 px-4 text-sm bg-[#2A0134]/30 hover:bg-[#4a2a7a] transition-colors duration-200 mt-4"
                 onClick={() => alert("Coming soon 🚀")}
                 
               >

@@ -436,7 +436,7 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
         animate={testimonialInView ? "visible" : ""}
         variants={fadeIn}
         ref={testimonialRef}
-        className="relative w-full min-h-screen bg-[url('/images/img.png')] bg-cover bg-center flex flex-col items-center justify-center"
+        className="relative w-full bg-[url('/images/img.png')] bg-center flex flex-col mt-20 mb-20 items-center justify-center"
       >
         {/* Blurry Container - Reduced top margin */}
         <motion.div 

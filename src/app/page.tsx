@@ -425,7 +425,7 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
     className="pt-4 md:pt-6 text-base md:text-xl lg:text-2xl font-light max-w-5xl mx-auto leading-relaxed"
   >
     At LearnFi, we combine hands-on learning, real-world projects, and community mentorship to help you go from curious beginner to confident Web3 builder.
-    Each course is crafted to give you practical skills, not just theory: so you're not just watching videos; you're writing code, minting NFTs, and voting on-chain.
+    Each course is crafted to give you practical skills, not just theory: so you&apos;re not just watching videos; you&apos;re writing code, minting NFTs, and voting on-chain.
   </motion.div>
 </motion.div>
 </div>
@@ -545,7 +545,7 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
           className="border border-gray-500 px-4 md:px-6 py-6 md:py-8 bg-gradient-to-r from-[#2C2A7B]/20 to-[#FFFFFF]/10 rounded-lg min-h-[320px] flex flex-col justify-between overflow-hidden"
         >
           <h3 className="text-sm leading-relaxed">
-            This platform helped me mint my first NFT and actually understand the tech behind it. It's more than just hype — I finally feel like I belong in Web3.
+            This platform helped me mint my first NFT and actually understand the tech behind it. It&apos;s more than just hype — I finally feel like I belong in Web3.
           </h3>
           <div className="flex flex-row pt-4 md:pt-6 items-center gap-4 md:gap-6">
             <motion.div 
@@ -572,7 +572,7 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
           className="border border-gray-500 px-4 md:px-6 py-6 md:py-8 bg-gradient-to-r from-[#2C2A7B]/20 to-[#FFFFFF]/10 rounded-lg min-h-[320px] flex flex-col justify-between overflow-hidden"
         >
           <h3 className="text-sm leading-relaxed">
-            After working in finance for 10 years, I was looking to pivot. The DeFi module was a game changer — clear, practical, and actually fun to learn. Now I'm contributing to a DAO treasury team.
+            After working in finance for 10 years, I was looking to pivot. The DeFi module was a game changer — clear, practical, and actually fun to learn. Now I&apos;m contributing to a DAO treasury team.
           </h3>
           <div className="flex flex-row pt-4 md:pt-6 items-center gap-4 md:gap-6">
             <motion.div 
@@ -680,7 +680,7 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
           className="border border-gray-500 px-4 md:px-6 py-6 md:py-8 bg-gradient-to-r from-[#2C2A7B]/20 to-[#FFFFFF]/10 rounded-lg min-h-[320px] flex flex-col justify-between overflow-hidden"
         >
           <h3 className="text-sm leading-relaxed">
-            Having always been intrigued by the possibilities of cryptocurrency, I dove deep into the world of smart contracts. The mentorship I received was invaluable, and now I'm developing tools that empower others to navigate this landscape safely and effectively.
+            Having always been intrigued by the possibilities of cryptocurrency, I dove deep into the world of smart contracts. The mentorship I received was invaluable, and now I&apos;m developing tools that empower others to navigate this landscape safely and effectively.
           </h3>
           <div className="flex flex-row pt-4 md:pt-6 items-center gap-4 md:gap-6">
             <motion.div 
@@ -707,7 +707,7 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
           className="border border-gray-500 px-4 md:px-6 py-6 md:py-8 bg-gradient-to-r from-[#2C2A7B]/20 to-[#FFFFFF]/10 rounded-lg min-h-[320px] flex flex-col justify-between overflow-hidden"
         >
           <h3 className="text-sm leading-relaxed">
-            The immersive workshops taught me how to harness blockchain for real-world applications. I'm now building a platform focused on sustainable agricultural practices using decentralized tech.
+            The immersive workshops taught me how to harness blockchain for real-world applications. I&apos;m now building a platform focused on sustainable agricultural practices using decentralized tech.
           </h3>
           <div className="flex flex-row pt-4 md:pt-6 items-center gap-4 md:gap-6">
             <motion.div 
@@ -734,7 +734,7 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
           className="border border-gray-500 px-4 md:px-6 py-6 md:py-8 bg-gradient-to-r from-[#2C2A7B]/20 to-[#FFFFFF]/10 rounded-lg min-h-[320px] flex flex-col justify-between overflow-hidden"
         >
           <h3 className="text-sm leading-relaxed">
-            Inspired by the potential of NFTs, I've launched a project that connects artists with collectors, promoting indigenous art from across the continent. It's fulfilling to see culture and technology intertwine.
+            Inspired by the potential of NFTs, I&apos;ve launched a project that connects artists with collectors, promoting indigenous art from across the continent. It&apos;s fulfilling to see culture and technology intertwine.
           </h3>
           <div className="flex flex-row pt-4 md:pt-6 items-center gap-4 md:gap-6">
             <motion.div 
@@ -787,14 +787,14 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
               variants={slideUp}
               className="relative z-10 text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium text-center px-4"
             >
-              Web3 Isn't the Future. It's Now.
+              Web3 Isn&apos;t the Future. It&apos;s Now.
             </motion.h1>
             <motion.p 
               variants={slideUp}
               transition={{ delay: 0.2 }}
               className="relative z-10 text-white font-extralight pt-2 text-xl md:text-2xl lg:text-3xl mt-2 md:mt-4 text-center px-4"
             >
-              Start learning today and build what's next
+              Start learning today and build what&apos;s next
             </motion.p>
             <div className="pt-4 md:pt-5">
               <motion.button 

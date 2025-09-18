@@ -136,7 +136,7 @@ export default function Pricing() {
           >
             {/* Card 1 */}
             <motion.div variants={itemVariants} className="w-full max-w-md mx-auto">
-              <Atropos className="atropos w-full" rotateTouch="scroll" highlight={false}>
+              <Atropos className="atropos w-full" rotateTouch="scroll-x" highlight={false}>
                 <div className="atropos-scale">
                   <div className="atropos-rotate">
                     <div className="border border-gray-500 w-full rounded-3xl p-6 flex flex-col h-full">
@@ -191,7 +191,7 @@ export default function Pricing() {
 
             {/* Card 2 */}
             <motion.div variants={itemVariants} className="w-full max-w-md mx-auto">
-              <Atropos className="atropos w-full" rotateTouch="scroll" highlight={false}>
+              <Atropos className="atropos w-full" rotateTouch="scroll-x" highlight={false}>
                 <div className="atropos-scale">
                   <div className="atropos-rotate">
                     <div className="border border-gray-500 w-full rounded-3xl bg-gradient-to-b from-[#CECACA]/50 via-[#1a1a1a] to-[#2d2d2d]/50 p-6 flex flex-col h-full">
@@ -246,7 +246,7 @@ export default function Pricing() {
 
             {/* Card 3 */}
             <motion.div variants={itemVariants} className="w-full max-w-md mx-auto">
-              <Atropos className="atropos w-full" rotateTouch="scroll" highlight={false}>
+              <Atropos className="atropos w-full" rotateTouch="scroll-x" highlight={false}>
                 <div className="atropos-scale">
                   <div className="atropos-rotate">
                     <div className="border border-gray-500 w-full rounded-3xl p-6 flex flex-col h-full">

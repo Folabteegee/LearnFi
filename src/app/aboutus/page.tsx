@@ -164,7 +164,7 @@ export default function AboutUs() {
             >
               <Atropos
                 className="atropos w-full max-w-md"
-                rotateTouch="scroll"
+                rotateTouch="scroll-x"
                 highlight={false}
               >
                 <div className="atropos-scale">
@@ -220,7 +220,7 @@ export default function AboutUs() {
                 >
                   <Atropos
                     className="atropos w-full"
-                    rotateTouch="scroll"
+                    rotateTouch="scroll-x"
                     highlight={false}
                   >
                     <div className="atropos-scale">
@@ -264,7 +264,7 @@ export default function AboutUs() {
                 >
                   <Atropos
                     className="atropos w-full"
-                    rotateTouch="scroll"
+                    rotateTouch="scroll-x"
                     highlight={false}
                   >
                     <div className="atropos-scale">

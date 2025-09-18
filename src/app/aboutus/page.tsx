@@ -1,19 +1,19 @@
-"use client"
+"use client";
 
 import React, { useRef } from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, Variants } from "framer-motion";
 
 const Atropos = dynamic(() => import("atropos/react"), { ssr: false });
 
-// Animation variants (kept but cleaned up)
-const fadeIn = {
+// ✅ Typed animation variants
+const fadeIn: Variants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { duration: 0.8 } },
 };
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -24,7 +24,7 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
@@ -33,7 +33,7 @@ const itemVariants = {
   },
 };
 
-const slideInRight = {
+const slideInRight: Variants = {
   hidden: { opacity: 0, x: 50 },
   visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
 };
@@ -129,8 +129,9 @@ export default function AboutUs() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              LearnFi is on a mission to democratize Web3 education, making blockchain technology
-              accessible to everyone regardless of their background or experience level.
+              LearnFi is on a mission to democratize Web3 education, making
+              blockchain technology accessible to everyone regardless of their
+              background or experience level.
             </motion.p>
           </div>
 
@@ -145,19 +146,27 @@ export default function AboutUs() {
             <motion.div variants={itemVariants}>
               <h3 className="text-3xl font-bold mb-6">Our Mission</h3>
               <p className="text-[#CECACA] mb-6">
-                We believe that understanding Web3 technologies shouldn&apos;t be limited to developers
-                and technical experts. Our platform breaks down complex concepts into digestible
-                learning paths that empower anyone to participate in the decentralized future.
+                We believe that understanding Web3 technologies shouldn&apos;t
+                be limited to developers and technical experts. Our platform
+                breaks down complex concepts into digestible learning paths that
+                empower anyone to participate in the decentralized future.
               </p>
               <p className="text-[#CECACA]">
-                From blockchain fundamentals to advanced smart contract development, we provide
-                the tools, resources, and community support needed to thrive in the rapidly evolving
-                Web3 ecosystem.
+                From blockchain fundamentals to advanced smart contract
+                development, we provide the tools, resources, and community
+                support needed to thrive in the rapidly evolving Web3 ecosystem.
               </p>
             </motion.div>
 
-            <motion.div variants={itemVariants} className="flex justify-center">
-              <Atropos className="atropos w-full max-w-md" rotateTouch="scroll" highlight={false}>
+            <motion.div
+              variants={itemVariants}
+              className="flex justify-center"
+            >
+              <Atropos
+                className="atropos w-full max-w-md"
+                rotateTouch="scroll"
+                highlight={false}
+              >
                 <div className="atropos-scale">
                   <div className="atropos-rotate">
                     <div className="border border-gray-500 rounded-3xl p-6 h-full bg-gradient-to-b from-[#CECACA]/10 to-[#2d2d2d]/30">
@@ -195,19 +204,32 @@ export default function AboutUs() {
             animate={valuesInView ? "visible" : "hidden"}
             variants={containerVariants}
           >
-            <motion.h3 className="text-3xl font-bold text-center mb-16" variants={itemVariants}>
+            <motion.h3
+              className="text-3xl font-bold text-center mb-16"
+              variants={itemVariants}
+            >
               Our Values
             </motion.h3>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {values.map((value, index) => (
-                <motion.div key={index} variants={itemVariants} className="text-center">
-                  <Atropos className="atropos w-full" rotateTouch="scroll" highlight={false}>
+                <motion.div
+                  key={index}
+                  variants={itemVariants}
+                  className="text-center"
+                >
+                  <Atropos
+                    className="atropos w-full"
+                    rotateTouch="scroll"
+                    highlight={false}
+                  >
                     <div className="atropos-scale">
                       <div className="atropos-rotate">
                         <div className="border border-gray-500 rounded-3xl p-6 h-full bg-gradient-to-b from-[#CECACA]/5 to-[#2d2d2d]/20">
                           <div className="text-4xl mb-4">{value.icon}</div>
-                          <h4 className="text-xl font-bold mb-4">{value.title}</h4>
+                          <h4 className="text-xl font-bold mb-4">
+                            {value.title}
+                          </h4>
                           <p className="text-[#CECACA]">{value.description}</p>
                         </div>
                       </div>
@@ -226,23 +248,39 @@ export default function AboutUs() {
             animate={teamInView ? "visible" : "hidden"}
             variants={containerVariants}
           >
-            <motion.h3 className="text-3xl font-bold text-center mb-16" variants={itemVariants}>
+            <motion.h3
+              className="text-3xl font-bold text-center mb-16"
+              variants={itemVariants}
+            >
               Our Team
             </motion.h3>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {teamMembers.map((member, index) => (
-                <motion.div key={index} variants={itemVariants} className="text-center">
-                  <Atropos className="atropos w-full" rotateTouch="scroll" highlight={false}>
+                <motion.div
+                  key={index}
+                  variants={itemVariants}
+                  className="text-center"
+                >
+                  <Atropos
+                    className="atropos w-full"
+                    rotateTouch="scroll"
+                    highlight={false}
+                  >
                     <div className="atropos-scale">
                       <div className="atropos-rotate">
                         <div className="border border-gray-500 rounded-3xl p-6 h-full bg-gradient-to-b from-[#CECACA]/5 to-[#2d2d2d]/20">
                           <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#40FCBD] to-[#269670] flex items-center justify-center text-2xl">
-                            {member.name.split(' ').map((n) => n[0]).join('')}
+                            {member.name
+                              .split(" ")
+                              .map((n) => n[0])
+                              .join("")}
                           </div>
                           <h4 className="text-xl font-bold">{member.name}</h4>
                           <p className="text-[#40FCBD] mb-3">{member.role}</p>
-                          <p className="text-[#CECACA] text-sm">{member.bio}</p>
+                          <p className="text-[#CECACA] text-sm">
+                            {member.bio}
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -267,8 +305,17 @@ export default function AboutUs() {
             {/* Top Row */}
             <div className="flex flex-col md:flex-row justify-between items-start w-full gap-8 md:gap-0 px-4 md:px-10">
               {/* Left Column - LearnFi Logo */}
-              <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2">
-                <Image src="/images/Lofi.png" alt="LearnFi Logo" width={30} height={30} className="w-6 h-6 md:w-8 md:h-8" />
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="flex items-center gap-2"
+              >
+                <Image
+                  src="/images/Lofi.png"
+                  alt="LearnFi Logo"
+                  width={30}
+                  height={30}
+                  className="w-6 h-6 md:w-8 md:h-8"
+                />
                 <span className="text-base md:text-lg font-light">LearnFi</span>
               </motion.div>
 
@@ -292,7 +339,11 @@ export default function AboutUs() {
                     <motion.li
                       key={item}
                       initial={{ opacity: 0, x: 20 }}
-                      animate={ctaInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
+                      animate={
+                        ctaInView
+                          ? { opacity: 1, x: 0 }
+                          : { opacity: 0, x: 20 }
+                      }
                       transition={{ delay: 0.1 * index }}
                       whileHover={{ x: 5 }}
                       className="text-gray-300 hover:text-white cursor-pointer text-sm md:text-base"
@@ -311,7 +362,9 @@ export default function AboutUs() {
               transition={{ delay: 1 }}
               className="pt-8 text-gray-400 text-xs md:text-sm mt-8"
             >
-              <p className="pl-10">{new Date().getFullYear()} @ All rights reserved LearnFi</p>
+              <p className="pl-10">
+                {new Date().getFullYear()} @ All rights reserved LearnFi
+              </p>
             </motion.div>
           </div>
         </motion.div>

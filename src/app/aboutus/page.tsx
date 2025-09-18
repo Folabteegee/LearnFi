@@ -46,7 +46,7 @@ const slideInLeft: Variants = {
 // --- Atropos Props typing workaround ---
 interface SafeAtroposProps {
   className?: string;
-  rotateTouch?: "scroll" | boolean;
+  rotateTouch?: "scroll-x" | boolean;
   highlight?: boolean;
   children: React.ReactNode;
 }

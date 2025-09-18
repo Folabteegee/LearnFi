@@ -139,14 +139,16 @@ export default function Home() {
           >
             <motion.h1 
               variants={slideUp}
-              className="font-bold text-6xl mb-4"
+              className="font-bold bg-gradient-to-b from-white to-[#CECACA] bg-clip-text text-transparent
+ text-6xl mb-4"
             >
               Learn Web3. Earn Skills.
             </motion.h1>
             <motion.h2 
               variants={slideUp}
               transition={{ delay: 0.3 }}
-              className="font-normal text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+              className="font-normal text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl bg-gradient-to-b from-white to-[#CECACA] bg-clip-text text-transparent
+"
             >
               Build the Future.
             </motion.h2>

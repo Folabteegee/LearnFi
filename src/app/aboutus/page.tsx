@@ -50,26 +50,18 @@ export default function AboutUs() {
   const ctaInView = useInView(ctaRef, { once: true, amount: 0.5 });
 
   const teamMembers = [
+  
     {
-      name: "Alex Johnson",
-      role: "Founder & CEO",
-      bio: "Former blockchain developer with 8+ years in the space",
+      name: "Adeyemo Adebusuyi",
+      role: "Lead Designer",
+      bio: "Curriculum designer (UI/UX designer in Web3 technologies)",
     },
     {
-      name: "Maria Chen",
-      role: "Head of Education",
-      bio: "Curriculum designer and former university lecturer",
-    },
-    {
-      name: "David Smith",
+      name: "Taiwo Afolabi",
       role: "Lead Developer",
-      bio: "Full-stack developer specializing in Web3 technologies",
+      bio: "Developer specializing in Web3 technologies & Web development",
     },
-    {
-      name: "Sarah Williams",
-      role: "Community Manager",
-      bio: "Building and nurturing our global learner community",
-    },
+  
   ];
 
   const values = [
@@ -111,7 +103,8 @@ export default function AboutUs() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              About <span className="font-bold">LearnFi</span>
+              About <span className="font-bold bg-gradient-to-b from-white to-[#CECACA] bg-clip-text text-transparent
+">LearnFi</span>
             </motion.h1>
 
             <motion.h2
@@ -255,7 +248,7 @@ export default function AboutUs() {
               Our Team
             </motion.h3>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className=" items-center flex flex-col sm:flex-row justify-center gap-5">
               {teamMembers.map((member, index) => (
                 <motion.div
                   key={index}

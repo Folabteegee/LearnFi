@@ -181,6 +181,7 @@ export default function Pricing() {
                         className=" border-b-1 border-t-1 text-lg rounded-2xl p-4 mt-10 mb-2 mx-2 bg-gradient-to-b from-[#40FCBD]/10 via-[#33C997]/10 to-[#269670]/10 cursor-pointer text-center"
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
+                        onClick={() => alert("Coming soon 🚀")}
                       >
                         Sign Up With Explorer
                       </motion.div>
@@ -236,6 +237,7 @@ export default function Pricing() {
                         className="border-b-1 border-t-1 text-lg rounded-2xl p-4 mt-10 mb-2 mx-2 bg-gradient-to-b from-[#40FCBD]/40 via-[#33C997]/30 to-[#269670]/20 cursor-pointer text-center"
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
+                        onClick={() => alert("Coming soon 🚀")}
                       >
                         Sign Up With Builder
                       </motion.div>
@@ -291,6 +293,7 @@ export default function Pricing() {
                         className="border-b-1 border-t-1 text-lg rounded-2xl p-4 mt-10 mb-2 mx-2 bg-gradient-to-b from-[#40FCBD]/10 via-[#33C997]/10 to-[#269670]/10 cursor-pointer text-center"
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
+                        onClick={() => alert("Coming soon 🚀")}
                       >
                         Sign Up With Innovator
                       </motion.div>

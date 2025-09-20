@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { motion, useInView, Variants } from "framer-motion";
+import Link from "next/link";
 
 const Atropos = dynamic(() => import("atropos/react"), { ssr: false });
 
@@ -54,7 +55,7 @@ export default function AboutUs() {
     {
       name: "Adeyemo Adebusuyi",
       role: "Lead Designer",
-      bio: "Curriculum designer (UI/UX designer in Web3 technologies)",
+      bio: "Website designer (UI/UX designer in Web3 technologies)",
     },
     {
       name: "Taiwo Afolabi",
@@ -163,7 +164,7 @@ export default function AboutUs() {
                 <div className="atropos-scale">
                   <div className="atropos-rotate">
                     <div className="border border-gray-500 rounded-3xl p-6 h-full bg-gradient-to-b from-[#CECACA]/10 to-[#2d2d2d]/30">
-                      <div className="text-2xl font-bold mb-4">2023 Impact</div>
+                      <div className="text-2xl font-bold mb-4"> Impact</div>
                       <div className="space-y-4">
                         <div className="flex justify-between items-center">
                           <span>Students Educated</span>
@@ -357,6 +358,17 @@ export default function AboutUs() {
             >
               <p className="pl-10">
                 {new Date().getFullYear()} @ All rights reserved LearnFi
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={ctaInView ? { opacity: 1 } : { opacity: 0 }}
+              transition={{ delay: 1 }}
+              className="pt-4 text-gray-400 text-xs md:text-sm mt-8"
+            >
+              <p className=" text-center">
+                Designed by <Link href="https://www.linkedin.com/in/adeyemoadebusuyi/"><span className="text-sm font-bold">Adeyemo Adebusuyi</span></Link> and Built by <Link   href="https://www.linkedin.com/in/taiwo-afolabi-b5b827227"
+                    target="_blank"><span className="text-sm font-bold">Taiwo Afolabi</span></Link> 
               </p>
             </motion.div>
           </div>

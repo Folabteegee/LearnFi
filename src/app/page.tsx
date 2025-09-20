@@ -3,6 +3,7 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
 
 const Atropos = dynamic(() => import("atropos/react"), { ssr: false });
 
@@ -182,7 +183,7 @@ export default function Home() {
     whileHover={{ scale: 1.05, backgroundColor: "black" }}
     whileTap={{ scale: 0.95 }}
     onClick={() => alert("Coming soon 🚀")}
-className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 md:py-3 bg-[#313131] hover:bg-black transition-colors duration-200 whitespace-nowrap mx-auto cursor-not-allowed opacity-70"
+className="border font-thin text-sm border-white rounded-2xl px-12 py-4 md:px-15 md:py-4 bg-[#313131] hover:bg-black transition-colors duration-200 whitespace-nowrap mx-auto cursor-not-allowed opacity-70"
   >
     Register now
   </motion.button>
@@ -232,7 +233,7 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
   variants={staggerContainer}
   className=""
 >
-  <div className="flex flex-row gap-2 mt-10 md:mt-15 justify-center mx-20">
+  <div className="flex lg:flex-row justify-center mt-10 md:mt-15 mx-20 flex-col">
   {/* Card 1 */}
   <motion.div variants={cardItem} className="w-full max-w-xs mx-auto">
     <Atropos>
@@ -247,12 +248,13 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
           height={350}
           className="flex items-center justify-center w-full h-auto"
         />
-        <h1 className="pt-4 md:pt-6 text-sm md:text-lg">Blockchain <br/>Fundamentals</h1>
+        <h1 className="pt-4 md:pt-6 text-xl md:text-lg">Blockchain <br/>Fundamentals</h1>
         <div className="pt-4 md:pt-6 mt-auto">
           <motion.button 
             whileHover={{ scale: 1.05, backgroundColor: "rgba(74, 42, 122, 0.8)" }}
             whileTap={{ scale: 0.95 }}
-            className="border-1 font-light border-white rounded-lg px-3 py-1 md:px-4 md:py-2 text-xs bg-[#FC4040]/10 hover:bg-[#4a2a7a] transition-colors duration-200 whitespace-nowrap"
+            onClick={() => alert("Coming soon 🚀")}
+            className="border-1 font-light border-white rounded-2xl px-15 py-4 md:px-15 md:py-4 text-sm bg-[#FC4040]/10 hover:bg-[#4a2a7a] transition-colors duration-200 whitespace-nowrap"
           >
             Explore More
           </motion.button>
@@ -262,7 +264,7 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
   </motion.div>
 
   {/* Card 2 */}
-  <motion.div variants={cardItem} className="w-full max-w-xs mx-auto">
+  <motion.div variants={cardItem} className="w-full pt-10 lg:pt-0  max-w-xs mx-auto">
     <Atropos>
       <motion.div 
         whileHover={{ y: -10, transition: { duration: 0.3 } }}
@@ -275,12 +277,13 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
           height={350}
           className="flex items-center justify-center w-full h-auto"
         />
-        <h1 className="pt-4 md:pt-6 text-sm md:text-lg">Wallets&<br/> Web3 Identity</h1>
+        <h1 className="pt-4 md:pt-6 text-xl md:text-lg">Wallets&<br/> Web3 Identity</h1>
         <div className="pt-4 md:pt-6 mt-auto">
           <motion.button 
             whileHover={{ scale: 1.05, backgroundColor: "black" }}
             whileTap={{ scale: 0.95 }}
-            className="border-1 font-light border-white rounded-lg px-3 py-1 md:px-4 md:py-2 text-xs bg-[#313131] hover:bg-black transition-colors duration-200 whitespace-nowrap"
+            onClick={() => alert("Coming soon 🚀")}
+            className="border-1 font-light border-white rounded-2xl px-15 py-4 md:px-15 md:py-4 text-sm bg-[#313131] hover:bg-black transition-colors duration-200 whitespace-nowrap"
           >
             Explore More
           </motion.button>
@@ -290,7 +293,7 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
   </motion.div>
 
   {/* Card 3 */}
-  <motion.div variants={cardItem} className="w-full max-w-xs mx-auto">
+  <motion.div variants={cardItem} className="w-full pt-10 lg:pt-0  max-w-xs mx-auto">
     <Atropos>
       <motion.div 
         whileHover={{ y: -10, transition: { duration: 0.3 } }}
@@ -303,12 +306,13 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
           height={350}
           className="flex items-center justify-center w-full h-auto"
         />
-        <h1 className="pt-4 md:pt-6 text-sm md:text-lg">SmartContracts <br/> 101</h1>
+        <h1 className="pt-4 md:pt-6 text-xl md:text-lg">SmartContracts <br/> 101</h1>
         <div className="pt-4 md:pt-6 mt-auto">
           <motion.button 
             whileHover={{ scale: 1.05, backgroundColor: "rgba(74, 42, 122, 0.8)" }}
             whileTap={{ scale: 0.95 }}
-            className="border-1 font-light border-white rounded-lg px-3 py-1 md:px-4 md:py-2 text-xs bg-[#FC4040]/10 hover:bg-[#4a2a7a] transition-colors duration-200 whitespace-nowrap"
+            onClick={() => alert("Coming soon 🚀")}
+            className="border-1 font-light border-white rounded-2xl px-15 py-4 md:px-15 md:py-4 text-sm bg-[#FC4040]/10 hover:bg-[#4a2a7a] transition-colors duration-200 whitespace-nowrap"
           >
             Explore More
           </motion.button>
@@ -318,7 +322,7 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
   </motion.div>
   </div>
 
-  <div className="flex flex-row gap-2 mt-10 md:mt-15 justify-center mx-20">
+  <div className="flex lg:flex-row justify-center mt-10 md:mt-15 mx-20 flex-col">
   {/* Card 4 */}
   <motion.div variants={cardItem} className="w-full max-w-xs mx-auto">
     <Atropos>
@@ -333,12 +337,13 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
           height={350}
           className="flex items-center justify-center w-full h-auto"
         />
-        <h1 className="pt-4 md:pt-6 text-sm md:text-lg">NFTs & the Creator <br/>Economy</h1>
+        <h1 className="pt-4 md:pt-6 text-xl md:text-lg">NFTs & the Creator <br/>Economy</h1>
         <div className="pt-4 md:pt-6 mt-auto">
           <motion.button 
             whileHover={{ scale: 1.05, backgroundColor: "rgba(74, 42, 122, 0.8)" }}
             whileTap={{ scale: 0.95 }}
-            className="border-1 font-light border-white rounded-lg px-3 py-1 md:px-4 md:py-2 text-xs bg-[#FC4040]/10 hover:bg-[#4a2a7a] transition-colors duration-200 whitespace-nowrap"
+            onClick={() => alert("Coming soon 🚀")}
+            className="border-1 font-light border-white rounded-2xl px-15 py-4 md:px-15 md:py-4 text-sm bg-[#FC4040]/10 hover:bg-[#4a2a7a] transition-colors duration-200 whitespace-nowrap"
           >
             Explore More
           </motion.button>
@@ -348,7 +353,7 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
   </motion.div>
 
   {/* Card 5 */}
-  <motion.div variants={cardItem} className="w-full max-w-xs mx-auto">
+  <motion.div variants={cardItem} className="w-full pt-10 lg:pt-0 max-w-xs mx-auto">
     <Atropos>
       <motion.div 
         whileHover={{ y: -10, transition: { duration: 0.3 } }}
@@ -361,12 +366,13 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
           height={350}
           className="flex items-center justify-center w-full h-auto"
         />
-        <h1 className="pt-4 md:pt-6 text-sm md:text-lg">DAOs & Decentralized<br/> Governance</h1>
+        <h1 className="pt-4 md:pt-6 text-xl md:text-lg">DAOs & Decentralized<br/> Governance</h1>
         <div className="pt-4 md:pt-6 mt-auto">
           <motion.button 
             whileHover={{ scale: 1.05, backgroundColor: "black" }}
             whileTap={{ scale: 0.95 }}
-            className="border-1 font-light border-white rounded-lg px-3 py-1 md:px-4 md:py-2 text-xs bg-[#313131] hover:bg-black transition-colors duration-200 whitespace-nowrap"
+            onClick={() => alert("Coming soon 🚀")}
+            className="border-1 font-light border-white rounded-2xl px-15 py-4 md:px-15 md:py-4 text-sm bg-[#313131] hover:bg-black transition-colors duration-200 whitespace-nowrap"
           >
             Explore More
           </motion.button>
@@ -376,7 +382,7 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
   </motion.div>
 
   {/* Card 6 */}
-  <motion.div variants={cardItem} className="w-full max-w-xs mx-auto">
+  <motion.div variants={cardItem} className="w-full pt-10 lg:pt-0  max-w-xs mx-auto">
     <Atropos>
       <motion.div 
         whileHover={{ y: -10, transition: { duration: 0.3 } }}
@@ -389,12 +395,13 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
           height={350}
           className="flex items-center justify-center w-full h-auto"
         />
-        <h1 className="py-4 md:py-6 text-sm md:text-lg">Build Your First DApps</h1>
+        <h1 className="py-4 md:py-6 text-xl md:text-lg">Build Your First DApps</h1>
         <div className="pt-4 md:pt-6 mt-auto">
           <motion.button 
             whileHover={{ scale: 1.05, backgroundColor: "rgba(74, 42, 122, 0.8)" }}
             whileTap={{ scale: 0.95 }}
-            className="border-1 border-white font-light rounded-lg px-3 py-1 md:px-4 md:py-2 text-xs bg-[#FC4040]/10 hover:bg-[#4a2a7a] transition-colors duration-200 whitespace-nowrap"
+            onClick={() => alert("Coming soon 🚀")}
+            className="border-1 border-white font-light rounded-2xl px-15 py-4 md:px-15 md:py-4 text-sm bg-[#FC4040]/10 hover:bg-[#4a2a7a] transition-colors duration-200 whitespace-nowrap"
           >
             Explore More
           </motion.button>
@@ -510,7 +517,7 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
   className="px-4 "
 >
   {/* Grid: 2 per row on sm+, 3 on md+. Add placeholder to avoid single card row */}
-  <div className="text-white grid grid-cols-2 md:grid-cols-3 gap-5 lg:gap-6 max-w-7xl mx-auto">
+  <div className="text-white grid md:grid-cols-3  gap-5 lg:gap-6 max-w-7xl mx-10">
     
     {/* Card 1 */}
     <motion.div variants={cardItem} className="w-full">
@@ -879,6 +886,17 @@ className="border font-thin text-sm border-white rounded-lg px-6 py-2 md:px-12 m
           >
             <p>{new Date().getFullYear()} @ All rights reserved LearnFi</p>
           </motion.div>
+          <motion.div
+              initial={{ opacity: 0 }}
+              animate={ctaInView ? { opacity: 1 } : { opacity: 0 }}
+              transition={{ delay: 1 }}
+              className="pt-4 text-gray-400 text-xs md:text-sm mt-8"
+            >
+              <p className=" text-center">
+                Designed by <Link href="https://www.linkedin.com/in/adeyemoadebusuyi/"><span className="text-sm font-bold">Adeyemo Adebusuyi</span></Link> and Built by <Link   href="https://www.linkedin.com/in/taiwo-afolabi-b5b827227"
+                    target="_blank"><span className="text-sm font-bold">Taiwo Afolabi</span></Link> 
+              </p>
+            </motion.div>
         </div>
       </motion.div>
     </div>

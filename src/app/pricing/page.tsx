@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { motion, AnimatePresence, useInView } from "framer-motion";
+import Link from "next/link";
 
 const Atropos = dynamic(() => import("atropos/react"), { ssr: false });
 
@@ -369,6 +370,17 @@ export default function Pricing() {
               className="pt-8 text-gray-400 text-xs md:text-sm mt-8"
             >
               <p className="pl-10">{new Date().getFullYear()} @ All rights reserved LearnFi</p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={ctaInView ? { opacity: 1 } : { opacity: 0 }}
+              transition={{ delay: 1 }}
+              className="pt-4 text-gray-400 text-xs md:text-sm mt-8"
+            >
+              <p className=" text-center">
+                Designed by <Link href="https://www.linkedin.com/in/adeyemoadebusuyi/"><span className="text-sm font-bold">Adeyemo Adebusuyi</span></Link> and Built by <Link   href="https://www.linkedin.com/in/taiwo-afolabi-b5b827227"
+                    target="_blank"><span className="text-sm font-bold">Taiwo Afolabi</span></Link> 
+              </p>
             </motion.div>
           </div>
         </motion.div>
